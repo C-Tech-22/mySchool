@@ -17,7 +17,14 @@ body {
     #header nav #brand {
       position: relative;
       color: #ecf0f1;
-      margin: 0 40px; }
+      margin: auto;
+      max-width: 100%;
+      margin-left: 30px; }
+      #header nav #brand h1 a {
+        color: #ecf0f1;
+        text-decoration: none; }
+        #header nav #brand h1 a:hover {
+          color: #3498db; }
       #header nav #brand #close {
         position: absolute;
         display: none;
@@ -63,11 +70,16 @@ body {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        margin-left: -100px; }
-        #header nav #brand #close {
+        max-width: 100%;
+        margin: auto; }
+        #header nav #brand h1 a {
           display: none; }
+        #header nav #brand #close {
+          display: none;
+          margin-left: 80px; }
         #header nav #brand #btn-bar {
           display: block;
+          margin-left: 80px;
           background: transparent;
           border: solid 2px #ecf0f1;
           border-radius: 4px;
@@ -100,8 +112,11 @@ main {
   justify-content: center;
   align-items: center;
   padding: 200px;
-  background-color: #ecf0f1;
-  color: #2c3e50; }
+  background: radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("/images/hero_bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ecf0f1; }
   main h2 {
     font-size: 5rem;
     margin-bottom: 1rem; }
