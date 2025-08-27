@@ -22,7 +22,7 @@ function shownavLinks(){
     listLink.forEach(link => {
         link.style.display = 'block';
         link.style.transition = '0.8s ease-in-out';
-        link.style.margin = '3px';
+        link.style.margin = '10px';
     });
 
 }
